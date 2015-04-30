@@ -14,6 +14,9 @@
   <remote  name="tm"
            fetch="git://github.com/TheMuppets/" />
 
+  <remote name="AuzOne"
+          fetch="https://github.com/AuzOne/" />
+
   <remote  name="gh"
            fetch="https://github.com/" />
 
@@ -516,9 +519,11 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <!-- New Additions for liquid -->
-  <project path="vendor/liquid" name="android_vendor_liquid" remote="ls" revision="5.1" >
+  <project path="vendor/liquid" name="AuzOne/android_vendor_liquid" revision="5.1" >
     <copyfile src="tools/build-liquid.sh" dest="build-liquid.sh" />
   </project>
+  
+  <project name="AuzOne/android_device_samsung_n7000" path="device/samsung/n7000" revision="lp5.1" />
 
   <!-- Slim file manager -->
   <project path="packages/apps/SlimFileManager" name="SlimRoms/packages_apps_SlimFileManager" remote="github" revision="lp5.1" />
